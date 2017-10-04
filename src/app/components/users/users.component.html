@@ -1,0 +1,10 @@
+<h2>{{name}}</h2>
+<ul>
+	<li>Age: {{age}}</li>
+	<li>Email: {{email}}</li>
+    <li>Address: {{address.state}},{{address.city}}</li>
+</ul>
+<h4>Hobbies</h4>
+<ul>
+	<li *ngFor="let h of hobbies;let i = index ">{{i+1}} {{h}}</li>
+</ul>
